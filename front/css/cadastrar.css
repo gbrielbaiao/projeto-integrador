@@ -37,7 +37,7 @@ header a {
   font-size: 14px;
 }
 
-main {
+form {
   flex: 1;
   display: flex;
   align-items: flex-start;
@@ -54,25 +54,28 @@ main {
   box-shadow: 0 4px 24px rgba(0,0,0,0.08);
 }
 
-.card-header {
+header.card-header {
   background: #18A89B;
   padding: 20px;
   text-align: center;
+  border-bottom: none;
+  height: auto;
+  display: block;
 }
 
-.card-header h2 {
+header.card-header h2 {
   color: #fff;
   font-size: 22px;
 }
 
-.card-body {
+section.card-body {
   padding: 28px;
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
 
-.card-body input {
+section.card-body input {
   width: 100%;
   padding: 12px 16px;
   border: 1.5px solid #ccc;
@@ -81,11 +84,11 @@ main {
   outline: none;
 }
 
-.card-body input:focus {
+section.card-body input:focus {
   border-color: #18A89B;
 }
 
-.card-body button {
+section.card-body button {
   width: 100%;
   padding: 12px;
   background: #18A89B;
@@ -97,17 +100,17 @@ main {
   cursor: pointer;
 }
 
-.card-body button:hover {
+section.card-body button:hover {
   background: #13897E;
 }
 
-.card-body p {
+section.card-body p {
   text-align: center;
   font-size: 13px;
   color: #666;
 }
 
-.card-body p a {
+section.card-body p a {
   color: #18A89B;
   font-weight: bold;
   text-decoration: none;
