@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar</title>
+  <link rel="stylesheet" href="css/cadastrar.css">
+</head>
+<body>
+
+  <header>
+    <h1>Editais Pontes e Lacerda</h1>
+    <a href="index.html">Voltar</a>
+  </header>
+
+  <main>
+    <div class="card">
+      <div class="card-header">
+        <h2>Cadastrar</h2>
+      </div>
+      <div class="card-body">
+        <input type="text" id="nome" placeholder="Seu nome">
+        <input type="text" id="sobrenome" placeholder="Seu sobrenome">
+        <input type="tel" id="telefone" placeholder="Número de telefone">
+        <input type="email" id="email" placeholder="Seu email">
+        <input type="password" id="senha" placeholder="Sua senha">
+        <input type="password" id="confirmar" placeholder="Repita sua senha">
+        <p class="erro" id="erro"></p>
+        <button onclick="cadastrar()">Cadastrar</button>
+        <p>Já possui uma conta? <a href="login.html">Entrar</a></p>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/cadastrar.js"></script>
+</body>
+</html>

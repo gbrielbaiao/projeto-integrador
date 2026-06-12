@@ -1,0 +1,165 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 0 24px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  color: #18A89B;
+  font-size: 20px;
+}
+
+header a {
+  background: #18A89B;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+main {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px 16px;
+  flex: 1;
+}
+
+h2 {
+  text-align: center;
+  color: #18A89B;
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.toolbar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.toolbar input {
+  flex: 1;
+  padding: 10px 16px;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  font-size: 14px;
+  outline: none;
+}
+
+.toolbar input:focus {
+  border-color: #18A89B;
+}
+
+.toolbar button {
+  padding: 10px 18px;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.toolbar button:hover {
+  border-color: #18A89B;
+  color: #18A89B;
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.badge {
+  display: inline-block;
+  background: #d1f5f0;
+  color: #0E7B6E;
+  padding: 2px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card h3 {
+  font-size: 13px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.card p {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.card p span {
+  color: #18A89B;
+  font-weight: bold;
+}
+
+.card .desc-label {
+  font-weight: bold;
+  color: #222;
+  margin-top: 8px;
+}
+
+.card .desc-text {
+  color: #666;
+  line-height: 1.6;
+}
+
+footer {
+  background: #fff;
+  border-top: 1px solid #ddd;
+  padding: 24px;
+  text-align: center;
+}
+
+footer button {
+  background: #fff;
+  border: 2px solid #18A89B;
+  color: #18A89B;
+  padding: 8px 24px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+footer p {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 4px;
+}
