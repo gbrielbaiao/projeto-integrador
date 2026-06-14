@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    
+
+    <header>
+        <h1>Editais Pontes e Lacerda</h1>
+        <a href="/">Voltar</a>
+    </header>
+
+    <form action="/register" method="post">
+        <div class="card">
+            <header class="card-header">
+                <h2>Cadastrar</h2>
+            </header>
+            
+            <section class="card-body">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="text" name="sobrenome" placeholder="Seu sobrenome" required>
+
+                <label for="contato">Formas de contato:</label>
+                <input type="tel" name="telefone" placeholder="Número de telefone" required>
+                <input type="email" name="email" placeholder="Seu email" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" placeholder="Sua senha" required>
+                <input type="password" name="confirmar" placeholder="Repita sua senha" required>
+
+                <p class="erro" id="erro"></p>
+
+                <button onclick="cadastrar()">Cadastrar</button>
+                <p>Já possui uma conta? <a href="login.html">Entrar</a></p>
+            </section>
+        </div>
+    </form>
+
+    <script src="js/cadastrar.js"></script>
+</body>
+</html>

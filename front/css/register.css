@@ -40,7 +40,7 @@ header a {
 form {
     flex: 1;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     padding: 40px 16px;
 }
@@ -73,6 +73,11 @@ section.card-body {
     display: flex;
     flex-direction: column;
     gap: 14px;
+}
+
+section.card-body label {
+    margin-top: 5px ;
+    margin-bottom: 0px;
 }
 
 section.card-body input {
@@ -119,6 +124,5 @@ section.card-body p a {
 .erro {
     color: red;
     font-size: 13px;
-    text-align: center;
     display: none;
 }

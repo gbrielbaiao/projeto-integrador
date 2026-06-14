@@ -2,34 +2,33 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Entrar</title>
-  <link rel="stylesheet" href="css/login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar</title>
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
 
-  <header>
-    <h1>Editais Pontes e Lacerda</h1>
-    <a href="index.html">Voltar</a>
-  </header>
+    <header>
+        <h1>Editais Pontes e Lacerda</h1>
+        <a href="/">Voltar</a>
+    </header>
 
-  <form>
-    <div class="card">
-      <header class="card-header">
-        <h2>Entrar</h2>
-      </header>
-      <section class="card-body">
-        <input type="email" id="email" placeholder="Seu email">
-        <input type="password" id="senha" placeholder="Sua senha">
-        <p class="erro" id="erro">Preencha todos os campos.</p>
-        <button onclick="entrar()">Entrar</button>
-        <p>Não possui uma conta? <a href="cadastrar.html">Cadastre-se</a></p>
-      </section>
-    </div>
-  </form>
+    <form action="/login", method="post">
+        <div class="card">
+            <header class="card-header">
+                <h2>Entrar</h2>
+            </header>
+            <section class="card-body">
+                <input type="email" name="email" placeholder="Seu email">
+                <input type="password" name="senha" placeholder="Sua senha">
+                <p class="erro" name="erro">Preencha todos os campos.</p>
+                <button onclick="entrar()">Entrar</button>
+                <p>Não possui uma conta? <a href="register.html">Cadastre-se</a></p>
+            </section>
+        </div>
+    </form>
 
-  <script src="js/login.js"></script>
 
 </body>
 </html>
